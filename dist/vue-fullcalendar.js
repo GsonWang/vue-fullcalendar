@@ -528,6 +528,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	exports.default = {
 	  props: {
+	    todos: {
+	      type: Array
+	    },
 	    events: { // events will be displayed on calendar
 	      type: Array,
 	      default: []
@@ -593,6 +596,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    'fc-header': __webpack_require__(15)
 	  }
 	}; //
+	//
+	//
+	//
+	//
 	//
 	//
 	//
@@ -756,7 +763,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    firstDay: {}
 	  },
 	  created: function created() {
-	    debugger;
 	    this.events.forEach(function (item, index) {
 	      item._id = item.id || index;
 	      item.end = item.end || item.start;
@@ -791,7 +797,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  methods: {
 	    isBegin: function isBegin(event, date, index) {
-	      debugger;
 	      var st = new Date(event.start);
 	
 	      if (index == 0 || st.toDateString() == date.toDateString()) {
@@ -857,7 +862,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return calendar;
 	    },
 	    slotEvents: function slotEvents(date) {
-	      debugger;
 	      // find all events start from this date
 	      var cellIndexArr = [];
 	      var thisDayEvents = this.events.filter(function (day) {
@@ -930,8 +934,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }
 	}; //
-	//
-	//
 	//
 	//
 	//
@@ -1113,8 +1115,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        key: index2,
 	        staticClass: "events-day",
 	        class: {
-	          'today': day.isToday,
-	            'not-cur-month': !day.isCurMonth
+	          'today': day.isToday, 'not-cur-month': !day.isCurMonth
 	        },
 	        attrs: {
 	          "track-by": "$index"
@@ -1130,7 +1131,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }, [_vm._v(_vm._s(day.monthDay))]), _vm._v(" "), _c('div', {
 	        staticClass: "event-box"
 	      }, [_vm._l((day.events), function(event, index3) {
-	        return _c('p', {
+	        return _c('div', {
 	          directives: [{
 	            name: "show",
 	            rawName: "v-show",
@@ -1149,7 +1150,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	              _vm.eventClick(event, $event)
 	            }
 	          }
-	        }, [_vm._t("body-card")], 2)
+	        }, [_vm._t("body-card", null, {
+	          event: event
+	        })], 2)
 	      }), _vm._v(" "), (day.events.length > _vm.eventLimit) ? _c('p', {
 	        staticClass: "more-link",
 	        on: {
@@ -1467,13 +1470,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      "eventclick": _vm.emitEventClick,
 	      "dayclick": _vm.emitDayClick,
 	      "moreclick": _vm.emitMoreClick
-	    }
-	  }, [_c('div', {
-	    attrs: {
-	      "slot": "body-card"
 	    },
-	    slot: "body-card"
-	  }, [_vm._t("fc-body-card")], 2)])], 1)
+	    scopedSlots: _vm._u([{
+	      key: "body-card",
+	      fn: function(slotProps) {
+	        return [_vm._t("fc-body-card", null, {
+	          event: slotProps.event
+	        })]
+	      }
+	    }])
+	  })], 1)
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {

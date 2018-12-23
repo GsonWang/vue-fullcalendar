@@ -18,20 +18,18 @@
       <div class="dates-events">
         <div class="events-week" v-for="(week, index) in currentDates" :key="index">
           <div class="events-day" v-for="(day, index2) in week" track-by="$index" :key="index2"
-            :class="{'today' : day.isToday,
-              'not-cur-month' : !day.isCurMonth}" @click.stop="dayClick(day.date, $event)">
+            :class="{'today' : day.isToday, 'not-cur-month' : !day.isCurMonth}" @click.stop="dayClick(day.date, $event)">
             <p class="day-number">{{day.monthDay}}</p>
             <div class="event-box">
-              <p class="event-item" v-for="(event, index3) in day.events" :key="index3" v-show="event.cellIndex <= eventLimit"
+              <div class="event-item" v-for="(event, index3) in day.events" :key="index3" v-show="event.cellIndex <= eventLimit"
                  :class="[classNames(event.cssClass), {
                   'is-start'   : isStart(event.start, day.date),
                   'is-end'     : isEnd(event.end,day.date),
                   'is-opacity' : !event.isShow
                   }]"
                 @click="eventClick(event,$event)">
-                <!-- {{isBegin(event, day.date, day.weekDay)}} -->
-                <slot name="body-card"></slot>
-              </p>
+                <slot name="body-card" :event="event"></slot>
+              </div>
               <p v-if="day.events.length > eventLimit"
                 class="more-link" @click.stop="selectThisDay(day, $event)">
                 + {{day.events[day.events.length -1].cellIndex - eventLimit}} more
@@ -76,7 +74,6 @@
       firstDay    : {}
     },
     created () {
-      debugger
       this.events.forEach((item, index) => {
         item._id = item.id || index
         item.end = item.end || item.start
@@ -110,7 +107,6 @@
     },
     methods : {
       isBegin (event, date, index) {
-        debugger
         let st = new Date(event.start)
 
         if (index == 0 || st.toDateString() == date.toDateString()) {
@@ -176,7 +172,6 @@
         return calendar
       },
       slotEvents (date) {
-        debugger
         // find all events start from this date
         let cellIndexArr = []
         let thisDayEvents = this.events.filter(day => {

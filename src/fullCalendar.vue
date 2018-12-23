@@ -17,14 +17,18 @@
         </slot>
       </div>
     </fc-header>
+
     <!-- body display date day and events -->
-    <fc-body :current-date="currentDate" :events="events" :month-names="monthNames" 
+    <fc-body
+      :current-date="currentDate" 
+      :events="events"
+      :month-names="monthNames" 
       :week-names="weekNames" :first-day="firstDay"
       @eventclick="emitEventClick" @dayclick="emitDayClick"
       @moreclick="emitMoreClick">
-      <div slot="body-card">
-        <slot name="fc-body-card"></slot>
-      </div>
+      <template slot="body-card" slot-scope="slotProps">
+        <slot name="fc-body-card" :event="slotProps.event"></slot>
+      </template>
     </fc-body>
   </div>
 </template>
@@ -33,6 +37,9 @@
 
   export default {
     props : {
+      todos: {
+        type: Array
+      },
       events : { // events will be displayed on calendar
         type : Array,
         default : []

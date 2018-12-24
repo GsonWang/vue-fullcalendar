@@ -27,7 +27,8 @@
       @eventclick="emitEventClick" @dayclick="emitDayClick"
       @moreclick="emitMoreClick">
       <template slot="body-card" slot-scope="slotProps">
-        <slot name="fc-body-card" :event="slotProps.event"></slot>
+        <!-- <p>{{slotProps.date}}</p>  -->
+        <slot name="fc-body-card" :event="slotProps.event" :index="slotProps.index" :date="slotProps.date"></slot>
       </template>
     </fc-body>
   </div>

@@ -629,6 +629,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//
 	//
 	//
+	//
 
 /***/ }),
 /* 8 */
@@ -730,7 +731,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.full-calendar-body {\n  margin-top: 20px;\n}\n.full-calendar-body .weeks {\n    display: flex;\n    border-top: 1px solid #e0e0e0;\n    border-bottom: 1px solid #e0e0e0;\n    border-left: 1px solid #e0e0e0;\n}\n.full-calendar-body .weeks .week {\n      flex: 1;\n      text-align: center;\n      border-right: 1px solid #e0e0e0;\n}\n.full-calendar-body .dates {\n    position: relative;\n}\n.full-calendar-body .dates .week-row {\n      border-left: 1px solid #e0e0e0;\n      display: flex;\n}\n.full-calendar-body .dates .week-row .day-cell {\n        flex: 1;\n        min-height: 100px;\n        padding: 4px;\n        border-right: 1px solid #e0e0e0;\n        border-bottom: 1px solid #e0e0e0;\n}\n.full-calendar-body .dates .week-row .day-cell .day-number {\n          text-align: right;\n}\n.full-calendar-body .dates .week-row .day-cell.today {\n          background-color: #fcf8e3;\n}\n.full-calendar-body .dates .week-row .day-cell.not-cur-month .day-number {\n          color: rgba(0, 0, 0, 0.24);\n}\n.full-calendar-body .dates .dates-events {\n      position: absolute;\n      top: 0;\n      left: 0;\n      z-index: 1;\n      width: 100%;\n}\n.full-calendar-body .dates .dates-events .events-week {\n        display: flex;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day {\n          cursor: pointer;\n          flex: 1;\n          min-height: 109px;\n          overflow: hidden;\n          text-overflow: ellipsis;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .day-number {\n            text-align: right;\n            padding: 4px 5px 4px 4px;\n            opacity: 0;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day.not-cur-month .day-number {\n            color: rgba(0, 0, 0, 0.24);\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item {\n            cursor: pointer;\n            font-size: 12px;\n            background-color: #C7E6FD;\n            margin-bottom: 2px;\n            color: rgba(0, 0, 0, 0.87);\n            padding: 0 0 0 4px;\n            height: 18px;\n            line-height: 18px;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-start {\n              margin-left: 4px;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-end {\n              margin-right: 4px;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-opacity {\n              opacity: 0;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .more-link {\n            cursor: pointer;\n            padding-left: 8px;\n            padding-right: 2px;\n            color: rgba(0, 0, 0, 0.38);\n            font-size: 14px;\n}\n.full-calendar-body .dates .more-events {\n      position: absolute;\n      width: 150px;\n      z-index: 2;\n      border: 1px solid #eee;\n      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);\n}\n.full-calendar-body .dates .more-events .more-header {\n        background-color: #eee;\n        padding: 5px;\n        display: flex;\n        align-items: center;\n        font-size: 14px;\n}\n.full-calendar-body .dates .more-events .more-header .title {\n          flex: 1;\n}\n.full-calendar-body .dates .more-events .more-header .close {\n          margin-right: 2px;\n          cursor: pointer;\n          font-size: 16px;\n}\n.full-calendar-body .dates .more-events .more-body {\n        height: 140px;\n        overflow: hidden;\n}\n.full-calendar-body .dates .more-events .more-body .body-list {\n          height: 120px;\n          padding: 5px;\n          overflow: auto;\n          background-color: #fff;\n}\n.full-calendar-body .dates .more-events .more-body .body-list .body-item {\n            cursor: pointer;\n            font-size: 12px;\n            background-color: #C7E6FD;\n            margin-bottom: 2px;\n            color: rgba(0, 0, 0, 0.87);\n            padding: 0 0 0 4px;\n            height: 18px;\n            line-height: 18px;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n}\n", ""]);
+	exports.push([module.id, "\n.full-calendar-body {\n  margin-top: 20px;\n}\n.full-calendar-body .weeks {\n    display: flex;\n    border-top: 1px solid #e0e0e0;\n    border-bottom: 1px solid #e0e0e0;\n    border-left: 1px solid #e0e0e0;\n}\n.full-calendar-body .weeks .week {\n      flex: 1;\n      text-align: center;\n      border-right: 1px solid #e0e0e0;\n}\n.full-calendar-body .dates {\n    position: relative;\n}\n.full-calendar-body .dates .week-row {\n      border-left: 1px solid #e0e0e0;\n      display: flex;\n}\n.full-calendar-body .dates .week-row .day-cell {\n        flex: 1;\n        min-height: 100px;\n        padding: 4px;\n        border-right: 1px solid #e0e0e0;\n        border-bottom: 1px solid #e0e0e0;\n}\n.full-calendar-body .dates .week-row .day-cell .day-number {\n          text-align: right;\n}\n.full-calendar-body .dates .week-row .day-cell.today {\n          background-color: #fcf8e3;\n}\n.full-calendar-body .dates .week-row .day-cell.not-cur-month .day-number {\n          color: rgba(0, 0, 0, 0.24);\n}\n.full-calendar-body .dates .dates-events {\n      position: absolute;\n      top: 0;\n      left: 0;\n      z-index: 1;\n      width: 100%;\n}\n.full-calendar-body .dates .dates-events .events-week {\n        display: flex;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day {\n          cursor: pointer;\n          flex: 1;\n          min-height: 109px;\n          overflow: hidden;\n          text-overflow: ellipsis;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .day-number {\n            text-align: right;\n            margin-bottom: 3px;\n            opacity: 0;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day.not-cur-month .day-number {\n            color: rgba(0, 0, 0, 0.24);\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item {\n            cursor: pointer;\n            font-size: 11px;\n            background-color: #c7e6fd;\n            margin-bottom: 2px;\n            color: rgba(0, 0, 0, 0.87);\n            padding: 0 0 0 4px;\n            height: 18px;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-start {\n              margin-left: 4px;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-end {\n              margin-right: 4px;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item.is-opacity {\n              opacity: 0;\n}\n.full-calendar-body .dates .dates-events .events-week .events-day .event-box .more-link {\n            cursor: pointer;\n            padding-left: 8px;\n            padding-right: 2px;\n            color: rgba(0, 0, 0, 0.38);\n            font-size: 14px;\n}\n.full-calendar-body .dates .more-events {\n      position: absolute;\n      width: 150px;\n      z-index: 2;\n      border: 1px solid #eee;\n      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);\n}\n.full-calendar-body .dates .more-events .more-header {\n        background-color: #eee;\n        padding: 5px;\n        display: flex;\n        align-items: center;\n        font-size: 14px;\n}\n.full-calendar-body .dates .more-events .more-header .title {\n          flex: 1;\n}\n.full-calendar-body .dates .more-events .more-header .close {\n          margin-right: 2px;\n          cursor: pointer;\n          font-size: 16px;\n}\n.full-calendar-body .dates .more-events .more-body {\n        height: 140px;\n        overflow: hidden;\n}\n.full-calendar-body .dates .more-events .more-body .body-list {\n          height: 120px;\n          padding: 5px;\n          overflow: auto;\n          background-color: #fff;\n}\n.full-calendar-body .dates .more-events .more-body .body-list .body-item {\n            cursor: pointer;\n            font-size: 12px;\n            background-color: #c7e6fd;\n            margin-bottom: 2px;\n            color: rgba(0, 0, 0, 0.87);\n            padding: 0 0 0 4px;\n            height: 18px;\n            line-height: 18px;\n            white-space: nowrap;\n            overflow: hidden;\n            text-overflow: ellipsis;\n}\n", ""]);
 	
 	// exports
 
@@ -739,7 +740,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -775,7 +776,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      weekMask: [1, 2, 3, 4, 5, 6, 7],
 	      // events : [],
 	      isLismit: true,
-	      eventLimit: 3,
+	      eventLimit: 2,
 	      showMore: false,
 	      morePos: {
 	        top: 0,
@@ -787,7 +788,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  watch: {
 	    weekNames: function weekNames(val) {
-	      console.log('watch weekNames', val);
+	      console.log("watch weekNames", val);
 	    }
 	  },
 	  computed: {
@@ -798,26 +799,33 @@ return /******/ (function(modules) { // webpackBootstrap
 	  methods: {
 	    isBegin: function isBegin(event, date, index) {
 	      var st = new Date(event.start);
+	      var flag = st.toDateString() == date.toDateString();
 	
-	      if (index == 0 || st.toDateString() == date.toDateString()) {
-	        return event.title;
+	      if (index == 0 || flag) {
+	        return {
+	          title: event.title,
+	          desc: event.desc
+	        };
 	      }
-	      return '　';
+	      return {
+	        title: '',
+	        desc: ''
+	      };
 	    },
 	    moreTitle: function moreTitle(date) {
 	      var dt = new Date(date);
-	      return this.weekNames[dt.getDay()] + ', ' + this.monthNames[dt.getMonth()] + dt.getDate();
+	      return this.weekNames[dt.getDay()] + ", " + this.monthNames[dt.getMonth()] + dt.getDate();
 	    },
 	    classNames: function classNames(cssClass) {
-	      if (!cssClass) return '';
-	      // string  
-	      if (typeof cssClass == 'string') return cssClass;
+	      if (!cssClass) return "";
+	      // string
+	      if (typeof cssClass == "string") return cssClass;
 	
 	      // Array
-	      if (Array.isArray(cssClass)) return cssClass.join(' ');
+	      if (Array.isArray(cssClass)) return cssClass.join(" ");
 	
 	      // else
-	      return '';
+	      return "";
 	    },
 	    getCalendar: function getCalendar() {
 	      // calculate 2d-array of each month
@@ -837,7 +845,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var calendar = [];
 	
 	      for (var perWeek = 0; perWeek < 6; perWeek++) {
-	
 	        var week = [];
 	
 	        for (var perDay = 0; perDay < 7; perDay++) {
@@ -885,10 +892,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        thisDayEvents[i].isShow = true;
 	        if (thisDayEvents[i].cellIndex == i + 1 || i > 2) continue;
 	        thisDayEvents.splice(i, 0, {
-	          title: 'holder',
+	          title: "holder",
 	          cellIndex: i + 1,
-	          start: _dateFunc2.default.format(date, 'yyyy-MM-dd'),
-	          end: _dateFunc2.default.format(date, 'yyyy-MM-dd'),
+	          start: _dateFunc2.default.format(date, "yyyy-MM-dd"),
+	          end: _dateFunc2.default.format(date, "yyyy-MM-dd"),
 	          isShow: false
 	        });
 	      }
@@ -911,7 +918,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var events = day.events.filter(function (item) {
 	        return item.isShow == true;
 	      });
-	      this.$emit('moreclick', day.date, events, jsEvent);
+	      this.$emit("moreclick", day.date, events, jsEvent);
 	    },
 	    computePos: function computePos(target) {
 	      var eventRect = target.getBoundingClientRect();
@@ -922,7 +929,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      };
 	    },
 	    dayClick: function dayClick(day, jsEvent) {
-	      this.$emit('dayclick', day, jsEvent);
+	      this.$emit("dayclick", day, jsEvent);
 	    },
 	    eventClick: function eventClick(event, jsEvent) {
 	      if (!event.isShow) {
@@ -930,10 +937,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	      jsEvent.stopPropagation();
 	      var pos = this.computePos(jsEvent.target);
-	      this.$emit('eventclick', event, jsEvent, pos);
+	      this.$emit("eventclick", event, jsEvent, pos);
 	    }
 	  }
 	}; //
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 	//
 	//
 	//
@@ -1151,7 +1182,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	          }
 	        }, [_vm._t("body-card", null, {
-	          event: event
+	          event: _vm.isBegin(event, day.date, day.weekDay),
+	          date: day.date,
+	          index: index3
 	        })], 2)
 	      }), _vm._v(" "), (day.events.length > _vm.eventLimit) ? _c('p', {
 	        staticClass: "more-link",
@@ -1161,7 +1194,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _vm.selectThisDay(day, $event)
 	          }
 	        }
-	      }, [_vm._v("\n              + " + _vm._s(day.events[day.events.length - 1].cellIndex - _vm.eventLimit) + " more\n            ")]) : _vm._e()], 2)])
+	      }, [_vm._v("+ " + _vm._s(day.events[day.events.length - 1].cellIndex - _vm.eventLimit) + " more")]) : _vm._e()], 2)])
 	    }), 0)
 	  }), 0), _vm._v(" "), _c('div', {
 	    directives: [{
@@ -1206,7 +1239,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _vm.eventClick(event, $event)
 	        }
 	      }
-	    }, [_vm._v("\n            " + _vm._s(event.title) + "\n          ")])
+	    }, [_vm._v(_vm._s(event.title))])
 	  }), 0)])])])])
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
@@ -1475,7 +1508,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      key: "body-card",
 	      fn: function(slotProps) {
 	        return [_vm._t("fc-body-card", null, {
-	          event: slotProps.event
+	          event: slotProps.event,
+	          index: slotProps.index,
+	          date: slotProps.date
 	        })]
 	      }
 	    }])

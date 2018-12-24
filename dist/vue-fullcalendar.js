@@ -802,15 +802,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var flag = st.toDateString() == date.toDateString();
 	
 	      if (index == 0 || flag) {
-	        return {
-	          title: event.title,
-	          desc: event.desc
-	        };
+	        return event;
 	      }
-	      return {
-	        title: '',
-	        desc: ''
-	      };
+	      return {};
 	    },
 	    moreTitle: function moreTitle(date) {
 	      var dt = new Date(date);

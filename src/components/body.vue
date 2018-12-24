@@ -135,15 +135,9 @@ export default {
       let flag = st.toDateString() == date.toDateString();
       
       if (index == 0 || flag) {
-        return {
-          title: event.title,
-          desc: event.desc
-        };
+        return event;
       }
-      return {
-        title: '',
-        desc: ''
-      };
+      return {};
     },
     moreTitle(date) {
       let dt = new Date(date);
